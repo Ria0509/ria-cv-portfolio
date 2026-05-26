@@ -12,7 +12,7 @@ export const projects = [
     description:
       "Personal portfolio built with React and TypeScript showcasing my projects and skills.",
     tech: ["React", "TypeScript"],
-    github: "https://github.com/yourusername/cv-portfolio",
+    github: "https://github.com/Ria0509/ria-cv-portfolio",
     live: "#",
   },
 ];
