@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 32px;
+  z-index: 1000;
+
+  box-sizing: border-box;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+}
+
+
+/* DARK MODE */
+.navbar.dark {
+  background: rgba(15, 23, 42, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* LIGHT MODE */
+.navbar.light {
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar.dark .nav-links li {
+  color: white;
+}
+
+.navbar.light .nav-links li {
+  color: #0f172a;
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+
+  padding: 6px 10px;
+
+  transition: 0.3s ease;
+}
+
+
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 0%;
+  height: 2px;
+
+  background: #60a5fa;
+
+  transition: all 0.3s ease;
+
+  transform: translateX(-50%);
+}
+
+.nav-links li:hover::after {
+  width: 70%;
+}
+
+.nav-links li.active::after {
+  width: 70%;
+}
+
+.nav-links li:hover {
+  color: #60a5fa;
+}
+
+
+
+.theme-toggle {
+  border: none;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+  background: rgba(96, 165, 250, 0.2);
+}
+
+
+
+.nav-links li {
+  cursor: pointer;
+}
+
+
+a,
+button,
+li {
+  cursor: pointer;
+}
