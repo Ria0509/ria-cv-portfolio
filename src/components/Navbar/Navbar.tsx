@@ -19,7 +19,7 @@ export default function Navbar({ active }: Props) {
 
   return (
     <nav className={`navbar ${theme?.darkMode ? "dark" : "light"}`}>
-      <div className="logo">Ria Hekefjäll</div>
+      <div className="logo">Ria Hakefjäll</div>
 
       <ul className="nav-links">
         <li
